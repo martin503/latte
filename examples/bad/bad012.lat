@@ -1,0 +1,6 @@
+int main() {
+     int i = foo(True);
+     return 0 ;
+}
+
+int foo(bool b) { b = True; }

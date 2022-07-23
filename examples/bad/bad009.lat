@@ -1,0 +1,6 @@
+# Wrong type value assignment
+int main() {
+        int x;
+        x = True;
+        return 1;
+}

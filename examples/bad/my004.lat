@@ -1,0 +1,6 @@
+# not defined var
+
+int main() {
+    int x = y + 7;
+    return 0;
+}

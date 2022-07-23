@@ -1,0 +1,7 @@
+# Assigning int to str variable.
+
+int main () {
+ str x;
+ x = 1;
+ return 0 ;
+}

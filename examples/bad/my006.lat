@@ -1,0 +1,5 @@
+# no main
+
+int func() {
+    return 0;
+}

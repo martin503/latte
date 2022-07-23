@@ -1,0 +1,92 @@
+\documentclass[a4paper]{article}
+
+\usepackage{amssymb,mathrsfs,amsmath,amscd,amsthm}
+\usepackage[mathcal]{euscript}
+\usepackage{stmaryrd}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[polish]{babel}
+\usepackage{enumitem}
+\usepackage{graphicx}
+\usepackage{titling}
+\usepackage{float}
+\usepackage{hyperref}
+
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    filecolor=magenta,      
+    urlcolor=cyan,
+    pdftitle={Overleaf Example},
+    pdfpagemode=FullScreen,
+    }
+
+\setlength\parindent{0pt}
+
+\title{Deklaracja języka}
+\author{Marcin Mazur}
+
+\begin{document}
+
+\maketitle
+\section{Opis}
+Mam zamiar zrobić kopię języka Latte:\\
+\url{https://www.mimuw.edu.pl/~ben/Zajecia/Mrj2021/Latte/} \\
+Zmiany (w stosunku do wyżej wymienionej gramatyki):
+\begin{itemize}
+      \item syntax przybliżony do składni pythona
+      \item pass-by-value
+      \item for loop
+      \item read-only variables
+      \item break, continue
+      \item pozbycie się typu void
+      \item podział na deklaracje i statementy
+\end{itemize}
+Nietypowo działające konstrukcje:
+\begin{itemize}
+      \item for loop - ostatni element w nawiasach '()' jest dowolnym Stmt,
+            który wykona się po każdej iteracji fora. W szczególności oznacza
+            to, że można tworzyć bardziej skomplikowane instrukcje w postaci
+            bloków (przykłady zawarte w testach).
+      \item read-only variables - możliwość przypisania wartości wyłącznie
+            w momencie deklaracji, co skutkuje tym, że zmienna 'const',
+            która 'nie dostanie' wartości staje się zmienną 'śmieciową'.
+            Przez zmienną 'śmieciową' rozumiem, że nie można na nią przypisać żadnej wartości
+            ani żadnej wartości z niej odczytać.
+      \item incr, decr - są Stmt, i trzeba je zakończyć średnikiem ';'. Co
+            skutkuje tym, że niemożliwe są niektóre naturalne konstrukcje
+            typu:\\ \texttt{int x = y++ + 10;} (przykłady zawarte w testach).
+\end{itemize}
+
+\section{Tabelka}
+01 (trzy typy) \\
+02 (literały, arytmetyka, porównania) \\
+03 (zmienne, przypisanie) \\
+04 (print) \\
+05 (while, if) \\
+06 (funkcje, rekurencja) \\
+07 (przez zmienną / przez wartość) \\
+08 (zmienne read-only i pętla for) \\
+09 (przesłanianie i statyczne wiązanie) \\
+10 (obsługa błędów wykonania) \\
+11 (funkcje zwracające wartość) \\
+16 (1) (break, continue)
+
+Razem: 22pkt
+
+\end{document}
+
+------------------------------------------------------------------------
+\begin{verbatim}
+
+\end{verbatim}
+
+------------------------------------------------------------------------\\
+IN:
+\begin{verbatim}
+
+\end{verbatim}
+OUT:
+\begin{verbatim}
+
+\end{verbatim}

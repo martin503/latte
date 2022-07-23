@@ -1,0 +1,10 @@
+# incr, decr
+
+int main() {
+    int x = 0;
+    x++;
+    print(x);
+    x--;
+    print(x);
+    return 0;
+}

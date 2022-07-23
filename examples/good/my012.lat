@@ -1,0 +1,15 @@
+# recursion
+
+int test(int a, int b) {
+    if (a == 5) {
+        return a;
+    }
+    print(b);
+    b = test(a+1, 0);
+    return 69;
+}
+
+int main() {
+    test(-3, 42);
+    return test(5, 1000);
+}

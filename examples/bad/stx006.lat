@@ -1,0 +1,7 @@
+# ++ is a statement so it always need ';' at the end
+
+int main() {
+    int x = 2;
+    y = (x++) + 1;
+    return y;
+}

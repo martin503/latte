@@ -1,0 +1,102 @@
+# simplest
+
+str test_args(int a, bool &b, str x) {
+    print(x);
+    print(a);
+    print(b);
+    return "arg test passed!";
+}
+
+int test_recursion_1(int x) {
+    if (x == 5) {
+        return x;
+    }
+    return x * test_recursion_1(x+1);
+}
+
+int test_recursion_2(int x, int f) {
+    if (f == 6) {
+        return x;
+    }
+    return test_recursion_2(x * f, f+1);
+}
+
+int main() {
+    print(0);
+    print("str");
+    print(True);
+
+    print(0 < 1);
+    print(0 <= 1);
+    print(0 <= 0);
+    print(1 > 0);
+    print(1 >= 0);
+    print(1 >= 1);
+    print(0 == 0);
+    print(0 <> 1);
+
+    print(2 < 1);
+    print(2 <= 1);
+    print(1 > 2);
+    print(1 >= 2);
+    print(2 == 1);
+    print(2 <> 2);
+
+    int x = 10;
+    const int y = 3;
+    print(-1 < 0);
+    print(not False);
+    print(not (-2 < -3));
+    print(x == 10);
+    print(not (x < y));
+
+    bool b = False;
+    print(test_args(1, b, "arg test in progress..."));
+
+    print(x + y);
+    print(10 - 2 * 3 / 6 + 1);
+    print(10 > 2 and x == 10);
+    print(10 > 2 or x <> 10);
+    print(x <> y or 10 == y and True);
+
+    if (True) {
+        print(True);
+    }
+
+    if (False) {
+        print(False);
+    } else {
+        print(True);
+    }
+
+    print(test_recursion_1(1));
+    print(test_recursion_2(1, 1));
+
+    int a = 10;
+    print(a);
+    a++;
+    print(a);
+    a--;
+    print(a);
+
+    int aa = 0;
+    str ss = "some";
+    bool bb = True;
+    print(aa);
+    print(ss);
+    print(bb);
+    aa = 1 - a + 3 * 1;
+    ss = "news";
+    bb = bb and (3 > 5 or 1 > 0 and 1 == 0);
+    print(aa);
+    print(ss);
+    print(bb);
+
+    int i = 0;
+    while (i < 5) {
+        print(i);
+        i++;
+    }
+    
+    return 0;
+}

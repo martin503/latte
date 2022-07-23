@@ -1,0 +1,5 @@
+# not defined func
+
+int main() {
+    return fun(10);
+}

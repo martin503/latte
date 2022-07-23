@@ -1,0 +1,11 @@
+# unknown type
+
+void test() {
+    void x;
+    return x;
+}
+
+int main() {
+    test();
+    return 1;
+}

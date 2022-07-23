@@ -1,0 +1,51 @@
+int fac(int a) {
+	int r;
+	int n;
+
+	r = 1;
+	n = a;
+	while (n > 0) {
+	  r = r * n;
+	  n = n - 1;
+	}
+	return r;
+}
+
+int rfac(int n) {
+	if (n == 0) {
+	  return 1;
+	}
+	else {
+	  return n * rfac(n-1);
+	}
+}
+
+int ifac2f(int l, int h) {
+        if (l == h) {
+          return l;
+		}
+        if (l > h) {
+          return 1;
+		}
+        int m;
+        m = (l + h) / 2;
+        return ifac2f(l,m) * ifac2f(m+1,h);
+}
+
+int ifac(int n) { return ifac2f(1,n); }
+
+int main() {
+	print(fac(10));
+	print(rfac(10));
+	print(ifac(10));
+	int n = 10;
+	int i = 1;
+	while (n>0) {
+		i = i * n;
+		n--;
+	}
+	print(i);
+	print ("hello */");
+	print ("/* world") ;
+	return 0 ;
+}

@@ -1,0 +1,15 @@
+# pass by value check
+
+bool test (int a, bool b, str c) {
+    if (b) {
+        return a == 0;
+    }
+    if (not b) {
+        return c == "c";
+    }
+}
+
+int main () {
+    test(1, True, "c");
+    return 0;
+}

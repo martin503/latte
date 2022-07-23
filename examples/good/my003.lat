@@ -1,0 +1,18 @@
+# pass by variable
+
+bool test (int &a, bool &b, str &c) {
+    if (b) {
+        return a == 0;
+    }
+    if (not b) {
+        return c == "c";
+    }
+}
+
+int main() {
+    int a = 7;
+    bool b = False;
+    str c = "d";
+    test(a, b, c);
+    return 0;
+}

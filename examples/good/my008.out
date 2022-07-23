@@ -1,0 +1,2 @@
+"not is applied first, so not True -> False"
+42

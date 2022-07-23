@@ -1,0 +1,5 @@
+# bad brackets
+
+int main )( {
+    return 1;
+}

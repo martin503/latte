@@ -1,0 +1,11 @@
+# no return
+
+
+int test() {
+    int x = 0;
+}
+
+int main() {
+    test();
+    return 0;
+}

@@ -1,0 +1,33 @@
+/* Test bool operators. */
+
+int myPrint(bool b) {
+  if (not b) {
+    print("False");
+  } else {
+    print("True");
+ }
+  return 0;
+}
+
+bool test(int i) {
+  print(i);
+  return i > 0;
+}
+
+int main() {
+  print("and");
+  myPrint(test(-1) and test(0));
+  myPrint(test(-2) and test(1));
+  myPrint(test(3) and test(-5));
+  myPrint(test(234234) and test(21321));
+  print("or");
+  myPrint(test(-1) or test(0));
+  myPrint(test(-2) or test(1));
+  myPrint(test(3) or test(-5));
+  myPrint(test(234234) or test(21321));
+  print("not ");
+  myPrint(True);
+  myPrint(False);
+  return 0 ;
+
+}

@@ -1,0 +1,27 @@
+# simple recursion
+
+int fac_tail(int n, int act, int res) {
+    if (n == act) {
+        return res;
+    } else {
+        return fac_tail(n, act+1, res * (act+1));
+    }
+}
+
+int fac(int n) {
+    if (n <= 1) {
+        return 1;
+    } else {
+        return n * fac(n-1);
+    }
+}
+
+int main() {
+    int i = 1;
+    while (i <= 10) {
+        print(fac_tail(i, 1, 1));
+        print(fac(i));
+        i = i+3;
+    }
+    return 0;
+}

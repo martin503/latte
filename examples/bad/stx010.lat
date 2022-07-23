@@ -1,0 +1,6 @@
+# multi declaration of different types
+
+int main() {
+    int x, z, bool b;
+    return 0;
+}

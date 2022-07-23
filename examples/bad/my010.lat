@@ -1,0 +1,7 @@
+# changing const variables
+
+int main() {
+    const int x = 0;
+    x++;
+    return x;
+}

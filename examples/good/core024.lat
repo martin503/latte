@@ -1,0 +1,16 @@
+bool e() {
+  print("NOOO");
+  return False;
+  }
+
+int f(int x, int y) {
+  if (y > x or e()) {
+    print("yes");
+  }
+  return 0;
+}
+
+int main() {
+  f(1,2);
+  return 0;
+}

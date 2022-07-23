@@ -1,0 +1,8 @@
+# Compare str with bool.
+
+int main() {
+  if ("True" == True) {
+   print("foo");
+  }
+  return 0 ;
+}

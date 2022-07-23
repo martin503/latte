@@ -1,0 +1,6 @@
+# brackets are mandatory for for loop
+
+int main() {
+    for (int i = 0; i < 2; i++;)
+        return 0;
+}

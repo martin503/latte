@@ -1,0 +1,23 @@
+# Testing the return checker
+
+int f () {
+   if (True) {
+     return 0;
+   }
+   else
+     {}
+}
+
+int g () {
+  if (False) 
+      {}
+  else {
+      return 0;
+  }
+}  
+
+int main() {
+  f();
+  g();
+  return 0;
+}

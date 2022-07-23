@@ -1,0 +1,23 @@
+/* Test arithmetic and comparisons. */
+
+int myPrint(bool b) {
+  if (b) {
+    print("True");
+  } else {
+    print("False");
+ }
+  return 0;
+}
+
+int main() {
+    int x = 56;
+    int y = -23;
+    print(x+y);
+    print(x-y);
+    print(x*y);
+    print(45/2);
+    print(78%3);
+    myPrint(x-y > x+y);
+    myPrint(x/y <= x*y);
+    return 0 ;
+}

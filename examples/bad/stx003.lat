@@ -1,0 +1,8 @@
+# brackets are mandatory for else
+
+int main() {
+    if (False) {
+        return 1;
+    } else
+        return 0;
+}

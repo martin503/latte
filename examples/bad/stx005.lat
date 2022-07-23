@@ -1,0 +1,6 @@
+# brackets are mandatory for while
+
+int main() {
+    while (True)
+        return 1;
+}

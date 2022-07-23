@@ -1,0 +1,6 @@
+# identifiers name clash with syntax
+
+int main() {
+    int not = 0;
+    return not;
+}

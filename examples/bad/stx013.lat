@@ -1,0 +1,11 @@
+# ++ is a Stmt
+
+int test(int x) {
+    return x;
+}
+
+int main() {
+    int x = 0;
+    test(x++);
+    return x;
+}

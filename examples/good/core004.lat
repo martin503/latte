@@ -1,0 +1,7 @@
+/* allow comparing booleans. */
+
+int main() {
+  if (True == True) { print(42); }
+  return 0 ;
+
+}

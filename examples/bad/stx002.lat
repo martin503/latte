@@ -1,0 +1,6 @@
+# brackets are mandatory for if
+
+int main() {
+    if (True)
+        return 1;
+}
